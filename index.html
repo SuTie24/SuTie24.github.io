@@ -1,5 +1,81 @@
-extends includes/layout.pug
-
-block content
-  include includes/recent-posts.pug
-  include includes/pagination.pug
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content=""><meta name="keywords" content=""><meta name="author" content="Sutie Ye"><meta name="copyright" content="Sutie Ye"><title>Hexo blog | Sutie</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  hexoVersion: '6.3.0'
+} </script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Sutie" type="application/atom+xml">
+</head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="false"><div class="author-info"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">Sutie Ye</div><div class="author-info__description text-center"></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">Articles</span><span class="pull-right">3</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">Tags</span><span class="pull-right">3</span></a></div></div></div><nav class="no-bg" id="nav"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Sutie</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right"></span></div><div id="site-info"><div id="site-title">Sutie</div><div id="site-sub-title">Hexo blog</div></div></nav><div id="content-outer"><div class="layout" id="content-inner"><div class="recent-post-item article-container"><a class="article-title" href="/2024/02/01/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240131/">双向变换学习-20240131</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2024-01-31</time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2/">双向变换</a></span><div class="content"><h1>双向变换学习-20240131</h1>
+<p>$i =\frac{U}{R}$</p>
+<p>$i = C\frac{dU_c}{dt}$</p>
+<p>$i = \frac{1}{LC}\int i_Ldt$</p>
+<h3 id="关于两种电压工作方式下的的异同之处">关于两种电压工作方式下的的异同之处</h3>
+<p><strong>——基于移相全桥双向直流变换器：</strong></p>
+<blockquote>
+<p>why:</p>
+<p>占空比不能超过百分之五十；</p>
+</blockquote>
+<p>to confrim：</p>
+<p>电流增大的过程</p>
+<p>根据如上电流公式，电路对$L_s$充电</p>
+</div><hr></div><div class="recent-post-item article-container"><a class="article-title" href="/2024/01/28/Git%E5%AD%A6%E4%B9%A0-20240128/">Git学习-20240128</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2024-01-28</time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/git/">git</a></span><div class="content"><h1>Git学习-2024-0128</h1>
+<h2 id="多人协同开发下的文件冲突问题">多人协同开发下的<strong>文件冲突问题</strong></h2>
+<p>由上一篇文章写到，多人协同开发时会有多个用户对资源库中的内容进行相关操作。而如果此时“张三”，“李四”，“王五”分别<strong>下载</strong>同一个文件进行修改，当他们<strong>上传</strong>修改后的文件时，新提交的文件便会替代后提交的文件，因此产生<strong>文件冲突问题</strong>。</p>
+<h3 id="集中版本控制系统">集中版本控制系统</h3>
+<h4 id="VSS">VSS</h4>
+<p>方式：通过对资源库文件进行上锁解锁避免文件冲突问题。</p>
+<blockquote>
+<p>当张三下载文件1时，VSS会自动锁定资源库中的文件1，李四和王五无法下载文件1直到张三修改完成并上传文件1。</p>
+</blockquote>
+<p>但是很明显，这种方式在一个时间段只有一个人能对指定文件进行修改，不符合多人协同开发的高效目的，因此VSS最终被淘汰。</p>
+<h4 id="CVS-SVN">CVS/SVN</h4>
+<p>方式：对多个用户上传的版本进行比对，而不是直接替换。</p>
+<blockquote>
+<p>在这种情况下，三个人都可以下载和修改文件，但是上传之后，他们对不同部分的内容进行操作，然后再进行<strong>比对</strong>并把修改都应用到资源库中。</p>
+</blockquote>
+<p>但是集中版本控制系统有一个致命问题，就是当<strong>中央服务器</strong>失效时，用户就无法对数据进行操作，甚至因此损失数据。</p>
+<h3 id="分部式版本控制系统">分部式版本控制系统</h3>
+<p>在中央服务器的基础上搭建一个<strong>本地资源库</strong>，而用户访问的客户端也不再是中央服务器，而是本地资源库，当中央服务器恢复工作时，通过本地资源库和中央服务器的关联将修改应用到中央服务器。</p>
+</div><hr></div><div class="recent-post-item article-container"><a class="article-title" href="/2024/01/27/Git%E5%AD%A6%E4%B9%A0-20240127/">Git学习-20240127</a><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2024-01-27</time><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fa fa-tag article-meta__icon" aria-hidden="true"></i><a class="article-meta__tags" href="/tags/Git/">Git</a></span><div class="content"><h1>Git学习2024_0127</h1>
+<blockquote>
+<p>关键词：版本控制；集中式版本控制；分布式版本控制；多人协作开发</p>
+</blockquote>
+<ul>
+<li>
+<p>版本</p>
+<p>软件版本	文件版本</p>
+<p>JDK	    1.8,17,20</p>
+</li>
+<li>
+<p>文件版本</p>
+<ol>
+<li>保存重要的历史记录</li>
+<li>恢复数据</li>
+</ol>
+</li>
+<li>
+<p>版本控制软件</p>
+<blockquote>
+<p>基本功能：</p>
+<ol>
+<li>保存和管理文件</li>
+<li>提供<strong>客户端工具</strong>进行访问（不直接对版本进行操作）</li>
+<li>提供不同版本文件的<strong>比对功能</strong>（确认差异和执行修改）</li>
+</ol>
+</blockquote>
+</li>
+<li>
+<p>围绕中央服务器进行的多人协作开发</p>
+<p>对于项目数据的管理应该是将所有资源集中到一个<strong>资源库</strong>进行储存，而不是分布到各个服务器，该服务器称为<strong>中央服务器</strong>。</p>
+<p>当用户需要对服务器内的数据进行操作时，就需要通过<strong>客户端</strong>工具从中央服务区把资源下载到本地，当多个用户进行相关操作时，这个工作状态称为<strong>多人协同开发</strong>。</p>
+</li>
+</ul>
+</div><hr></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2013 - 2024 By Sutie Ye</div><div class="framework-info"><span>Driven - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_uv"><i class="fa fa-user"></i><span id="busuanzi_value_site_uv"></span><span></span></span><span class="footer-separator">|</span><span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i><span id="busuanzi_value_site_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.1"></script><script src="/js/fancybox.js?version=1.9.1"></script><script src="/js/sidebar.js?version=1.9.1"></script><script src="/js/copy.js?version=1.9.1"></script><script src="/js/fireworks.js?version=1.9.1"></script><script src="/js/transition.js?version=1.9.1"></script><script src="/js/scroll.js?version=1.9.1"></script><script src="/js/head.js?version=1.9.1"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script></body></html>
