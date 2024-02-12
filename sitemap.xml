@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/tags/index.html</loc>
+    
+    <lastmod>2024-02-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/2024/01/27/Git%E5%AD%A6%E4%B9%A0-20240127/</loc>
     
     <lastmod>2024-02-12</lastmod>
@@ -47,15 +56,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
-    
-    <lastmod>2024-02-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/404/index.html</loc>
     
     <lastmod>2024-02-12</lastmod>
@@ -92,6 +92,13 @@
 
   
   <url>
+    <loc>http://example.com/tags/Git/</loc>
+    <lastmod>2024-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/tags/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2/</loc>
     <lastmod>2024-02-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -100,13 +107,6 @@
   
   <url>
     <loc>http://example.com/tags/%E7%94%B5%E5%8A%9B%E7%94%B5%E5%AD%90/</loc>
-    <lastmod>2024-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/Git/</loc>
     <lastmod>2024-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
