@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-01-31T08:25:20.003Z</updated>
+  <updated>2024-02-12T07:08:26.686Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,18 +21,18 @@
     <link href="http://example.com/2024/02/01/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240131/"/>
     <id>http://example.com/2024/02/01/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240131/</id>
     <published>2024-01-31T16:17:37.000Z</published>
-    <updated>2024-01-31T08:25:20.003Z</updated>
+    <updated>2024-02-12T07:08:26.686Z</updated>
     
-    <content type="html"><![CDATA[<h1>双向变换学习-20240131</h1><p>$i =\frac{U}{R}$</p><p>$i = C\frac{dU_c}{dt}$</p><p>$i = \frac{1}{LC}\int i_Ldt$</p><h3 id="关于两种电压工作方式下的的异同之处">关于两种电压工作方式下的的异同之处</h3><p><strong>——基于移相全桥双向直流变换器：</strong></p><blockquote><p>why:</p><p>占空比不能超过百分之五十；</p></blockquote><p>to confrim：</p><p>电流增大的过程</p><p>根据如上电流公式，电路对$L_s$充电</p>]]></content>
+    <content type="html"><![CDATA[<p>$i =\frac{U}{R}$</p><p>$i = C\frac{dU_c}{dt}$</p><p>$i = \frac{1}{LC}\int i_Ldt$</p><h3 id="关于两种电压工作方式下的的异同之处">关于两种电压工作方式下的的异同之处</h3><p><strong>——基于移相全桥双向直流变换器：</strong></p><blockquote><p>why:</p><p>占空比不能超过百分之五十；</p></blockquote><p>to confrim：</p><p>电流增大的过程</p><p>根据如上电流公式，电路对$L_s$充电</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1&gt;双向变换学习-20240131&lt;/h1&gt;
-&lt;p&gt;$i =&#92;frac{U}{R}$&lt;/p&gt;
+    <summary type="html">&lt;p&gt;$i =&#92;frac{U}{R}$&lt;/p&gt;
 &lt;p&gt;$i = C&#92;frac{dU_c}{dt}$&lt;/p&gt;
 &lt;p&gt;$i = &#92;frac{1}{LC}&#92;int i_Ldt$&lt;/p&gt;
-&lt;h3 id=&quot;关于两种电压工作方式下的的异同之处</summary>
+&lt;h3 id=&quot;关于两种电压工作方式下的的异同之处&quot;&gt;关于两种电压工作方式下的的异同之处&lt;/h3&gt;
+</summary>
       
     
     
@@ -47,16 +47,15 @@
     <link href="http://example.com/2024/01/28/Git%E5%AD%A6%E4%B9%A0-20240128/"/>
     <id>http://example.com/2024/01/28/Git%E5%AD%A6%E4%B9%A0-20240128/</id>
     <published>2024-01-28T14:44:11.000Z</published>
-    <updated>2024-01-28T08:36:27.454Z</updated>
+    <updated>2024-02-12T07:08:16.534Z</updated>
     
-    <content type="html"><![CDATA[<h1>Git学习-2024-0128</h1><h2 id="多人协同开发下的文件冲突问题">多人协同开发下的<strong>文件冲突问题</strong></h2><p>由上一篇文章写到，多人协同开发时会有多个用户对资源库中的内容进行相关操作。而如果此时“张三”，“李四”，“王五”分别<strong>下载</strong>同一个文件进行修改，当他们<strong>上传</strong>修改后的文件时，新提交的文件便会替代后提交的文件，因此产生<strong>文件冲突问题</strong>。</p><h3 id="集中版本控制系统">集中版本控制系统</h3><h4 id="VSS">VSS</h4><p>方式：通过对资源库文件进行上锁解锁避免文件冲突问题。</p><blockquote><p>当张三下载文件1时，VSS会自动锁定资源库中的文件1，李四和王五无法下载文件1直到张三修改完成并上传文件1。</p></blockquote><p>但是很明显，这种方式在一个时间段只有一个人能对指定文件进行修改，不符合多人协同开发的高效目的，因此VSS最终被淘汰。</p><h4 id="CVS-SVN">CVS/SVN</h4><p>方式：对多个用户上传的版本进行比对，而不是直接替换。</p><blockquote><p>在这种情况下，三个人都可以下载和修改文件，但是上传之后，他们对不同部分的内容进行操作，然后再进行<strong>比对</strong>并把修改都应用到资源库中。</p></blockquote><p>但是集中版本控制系统有一个致命问题，就是当<strong>中央服务器</strong>失效时，用户就无法对数据进行操作，甚至因此损失数据。</p><h3 id="分部式版本控制系统">分部式版本控制系统</h3><p>在中央服务器的基础上搭建一个<strong>本地资源库</strong>，而用户访问的客户端也不再是中央服务器，而是本地资源库，当中央服务器恢复工作时，通过本地资源库和中央服务器的关联将修改应用到中央服务器。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="多人协同开发下的文件冲突问题">多人协同开发下的<strong>文件冲突问题</strong></h2><p>由上一篇文章写到，多人协同开发时会有多个用户对资源库中的内容进行相关操作。而如果此时“张三”，“李四”，“王五”分别<strong>下载</strong>同一个文件进行修改，当他们<strong>上传</strong>修改后的文件时，新提交的文件便会替代后提交的文件，因此产生<strong>文件冲突问题</strong>。</p><h3 id="集中版本控制系统">集中版本控制系统</h3><h4 id="VSS">VSS</h4><p>方式：通过对资源库文件进行上锁解锁避免文件冲突问题。</p><blockquote><p>当张三下载文件1时，VSS会自动锁定资源库中的文件1，李四和王五无法下载文件1直到张三修改完成并上传文件1。</p></blockquote><p>但是很明显，这种方式在一个时间段只有一个人能对指定文件进行修改，不符合多人协同开发的高效目的，因此VSS最终被淘汰。</p><h4 id="CVS-SVN">CVS/SVN</h4><p>方式：对多个用户上传的版本进行比对，而不是直接替换。</p><blockquote><p>在这种情况下，三个人都可以下载和修改文件，但是上传之后，他们对不同部分的内容进行操作，然后再进行<strong>比对</strong>并把修改都应用到资源库中。</p></blockquote><p>但是集中版本控制系统有一个致命问题，就是当<strong>中央服务器</strong>失效时，用户就无法对数据进行操作，甚至因此损失数据。</p><h3 id="分部式版本控制系统">分部式版本控制系统</h3><p>在中央服务器的基础上搭建一个<strong>本地资源库</strong>，而用户访问的客户端也不再是中央服务器，而是本地资源库，当中央服务器恢复工作时，通过本地资源库和中央服务器的关联将修改应用到中央服务器。</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1&gt;Git学习-2024-0128&lt;/h1&gt;
-&lt;h2 id=&quot;多人协同开发下的文件冲突问题&quot;&gt;多人协同开发下的&lt;strong&gt;文件冲突问题&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;由上一篇文章写到，多人协同开发时会有多个用户对资源库中的内容进行相关操作。而如果此时“张三”，“李四”</summary>
+    <summary type="html">&lt;h2 id=&quot;多人协同开发下的文件冲突问题&quot;&gt;多人协同开发下的&lt;strong&gt;文件冲突问题&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;由上一篇文章写到，多人协同开发时会有多个用户对资源库中的内容进行相关操作。而如果此时“张三”，“李四”，“王五”分别&lt;strong&gt;下载&lt;/strong</summary>
       
     
     
@@ -71,22 +70,24 @@
     <link href="http://example.com/2024/01/27/Git%E5%AD%A6%E4%B9%A0-20240127/"/>
     <id>http://example.com/2024/01/27/Git%E5%AD%A6%E4%B9%A0-20240127/</id>
     <published>2024-01-27T12:03:05.000Z</published>
-    <updated>2024-01-28T04:03:53.151Z</updated>
+    <updated>2024-02-12T07:07:51.309Z</updated>
     
-    <content type="html"><![CDATA[<h1>Git学习2024_0127</h1><blockquote><p>关键词：版本控制；集中式版本控制；分布式版本控制；多人协作开发</p></blockquote><ul><li><p>版本</p><p>软件版本文件版本</p><p>JDK    1.8,17,20</p></li><li><p>文件版本</p><ol><li>保存重要的历史记录</li><li>恢复数据</li></ol></li><li><p>版本控制软件</p><blockquote><p>基本功能：</p><ol><li>保存和管理文件</li><li>提供<strong>客户端工具</strong>进行访问（不直接对版本进行操作）</li><li>提供不同版本文件的<strong>比对功能</strong>（确认差异和执行修改）</li></ol></blockquote></li><li><p>围绕中央服务器进行的多人协作开发</p><p>对于项目数据的管理应该是将所有资源集中到一个<strong>资源库</strong>进行储存，而不是分布到各个服务器，该服务器称为<strong>中央服务器</strong>。</p><p>当用户需要对服务器内的数据进行操作时，就需要通过<strong>客户端</strong>工具从中央服务区把资源下载到本地，当多个用户进行相关操作时，这个工作状态称为<strong>多人协同开发</strong>。</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>关键词：版本控制；集中式版本控制；分布式版本控制；多人协作开发</p></blockquote><ul><li><p>版本</p><p>软件版本文件版本</p><p>JDK    1.8,17,20</p></li><li><p>文件版本</p><ol><li>保存重要的历史记录</li><li>恢复数据</li></ol></li><li><p>版本控制软件</p><blockquote><p>基本功能：</p><ol><li>保存和管理文件</li><li>提供<strong>客户端工具</strong>进行访问（不直接对版本进行操作）</li><li>提供不同版本文件的<strong>比对功能</strong>（确认差异和执行修改）</li></ol></blockquote></li><li><p>围绕中央服务器进行的多人协作开发</p><p>对于项目数据的管理应该是将所有资源集中到一个<strong>资源库</strong>进行储存，而不是分布到各个服务器，该服务器称为<strong>中央服务器</strong>。</p><p>当用户需要对服务器内的数据进行操作时，就需要通过<strong>客户端</strong>工具从中央服务区把资源下载到本地，当多个用户进行相关操作时，这个工作状态称为<strong>多人协同开发</strong>。</p></li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1&gt;Git学习2024_0127&lt;/h1&gt;
-&lt;blockquote&gt;
+    <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;关键词：版本控制；集中式版本控制；分布式版本控制；多人协作开发&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;版本&lt;/p&gt;
 &lt;p&gt;软件版本	文件版本&lt;/p&gt;
-&lt;p&gt;JDK	    1.</summary>
+&lt;p&gt;JDK	    1.8,17,20&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;</summary>
       
     
     
