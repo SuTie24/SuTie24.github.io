@@ -89,7 +89,7 @@
     <link href="http://example.com/2024/01/27/Git%E5%AD%A6%E4%B9%A0-20240127/"/>
     <id>http://example.com/2024/01/27/Git%E5%AD%A6%E4%B9%A0-20240127/</id>
     <published>2024-01-27T12:03:05.000Z</published>
-    <updated>2024-02-12T09:53:55.679Z</updated>
+    <updated>2024-02-12T10:05:24.196Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>关键词：版本控制；集中式版本控制；分布式版本控制；多人协作开发</p></blockquote><ul><li><p>版本</p><p>软件版本文件版本</p><p>JDK    1.8,17,20</p></li><li><p>文件版本</p><ol><li>保存重要的历史记录</li><li>恢复数据</li></ol></li><li><p>版本控制软件</p><blockquote><p>基本功能：</p><ol><li>保存和管理文件</li><li>提供<strong>客户端工具</strong>进行访问（不直接对版本进行操作）</li><li>提供不同版本文件的<strong>比对功能</strong>（确认差异和执行修改）</li></ol></blockquote></li><li><p>围绕中央服务器进行的多人协作开发</p><p>对于项目数据的管理应该是将所有资源集中到一个<strong>资源库</strong>进行储存，而不是分布到各个服务器，该服务器称为<strong>中央服务器</strong>。</p><p>当用户需要对服务器内的数据进行操作时，就需要通过<strong>客户端</strong>工具从中央服务区把资源下载到本地，当多个用户进行相关操作时，这个工作状态称为<strong>多人协同开发</strong>。</p></li></ul>]]></content>
     
@@ -110,6 +110,8 @@
       
     
     
+    
+    <category term="Web" scheme="http://example.com/categories/Web/"/>
     
     
     <category term="Git" scheme="http://example.com/tags/Git/"/>
