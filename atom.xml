@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-02-12T09:53:48.412Z</updated>
+  <updated>2024-02-26T04:55:50.118Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,19 +17,55 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>双向变换学习-20240212</title>
-    <link href="http://example.com/2024/02/12/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240212/"/>
-    <id>http://example.com/2024/02/12/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240212/</id>
-    <published>2024-02-12T15:10:44.000Z</published>
-    <updated>2024-02-12T09:53:48.412Z</updated>
+    <title>note-2024-02-26</title>
+    <link href="http://example.com/2024/02/26/note-2024-02-26/"/>
+    <id>http://example.com/2024/02/26/note-2024-02-26/</id>
+    <published>2024-02-26T12:20:41.000Z</published>
+    <updated>2024-02-26T04:55:50.118Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Circuit-Theory">Circuit Theory</h2><h4 id="1-Nodes-Branches-and-Loops">(1)Nodes, Branches and Loops</h4><ol><li><p>To differentiate between a circuit and a network, we may regard a <strong>network</strong> as <strong>an interconnection of elements or devices</strong>, whereas a <strong>circuit</strong> is <strong>a network providing one or more closed paths</strong>.</p></li><li><p>A branch represents <strong>a single element</strong> such as a voltage source or a resistor. In other word, a <strong>branch</strong> represents <strong>any two-terminal element</strong>.</p></li><li><p>A <strong>node</strong> is the point of <strong>connection</strong> between two or more branches. <strong>If a short circuit (a connecting wire) connects two nodes, the two nodes constitute a single node</strong>.(For the sake of clarity)</p></li><li><p>A <strong>loop</strong> is any closed path in a circuit. A loop is a closed path formed by starting at a node, passing through a set of nodes, and returning to the starting node <strong>without passing through any node more than once</strong>.</p><p>A loop is said to be <strong>independent</strong> if it contains a branch which is not in any other loop. Independent loops or path results in <strong>independent sets of equations</strong> .</p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Circuit-Theory&quot;&gt;Circuit Theory&lt;/h2&gt;
+&lt;h4 id=&quot;1-Nodes-Branches-and-Loops&quot;&gt;(1)Nodes, Branches and Loops&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;To differenti</summary>
+      
     
     
     
+    <category term="学科知识" scheme="http://example.com/categories/%E5%AD%A6%E7%A7%91%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="专业词汇" scheme="http://example.com/tags/%E4%B8%93%E4%B8%9A%E8%AF%8D%E6%B1%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>双向变换学习-20240213</title>
+    <link href="http://example.com/2024/02/13/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240213/"/>
+    <id>http://example.com/2024/02/13/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240213/</id>
+    <published>2024-02-13T10:00:20.000Z</published>
+    <updated>2024-02-13T08:08:02.207Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="2024-0213">2024-0213</h3><h5 id="A-Control-Design-Technology-of-Isolated-Bidirectional-LLC-Resonant-Converter-for-Energy-Storage-System-in-DC-Microgrid-Applications">[A Control Design Technology of Isolated Bidirectional LLC Resonant Converter for Energy Storage System in DC Microgrid Applications]</h5><blockquote><p>Key word:</p><p>隔离型双向LLC谐振变换器 直流微电网储能 控制</p></blockquote><h4 id="摘要">摘要</h4>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;2024-0213&quot;&gt;2024-0213&lt;/h3&gt;
+&lt;h5 id=&quot;A-Control-Design-Technology-of-Isolated-Bidirectional-LLC-Resonant-Converter-for-Energy-Storage-Sy</summary>
+      
+    
+    
+    
+    <category term="电源" scheme="http://example.com/categories/%E7%94%B5%E6%BA%90/"/>
     
     
     <category term="双向变换" scheme="http://example.com/tags/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2/"/>
-    
-    <category term="电力电子" scheme="http://example.com/tags/%E7%94%B5%E5%8A%9B%E7%94%B5%E5%AD%90/"/>
     
   </entry>
   
@@ -38,7 +74,7 @@
     <link href="http://example.com/2024/01/31/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240131/"/>
     <id>http://example.com/2024/01/31/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240131/</id>
     <published>2024-01-31T08:17:37.305Z</published>
-    <updated>2024-02-12T09:53:50.090Z</updated>
+    <updated>2024-02-13T02:30:04.123Z</updated>
     
     <content type="html"><![CDATA[<p>$i =\frac{U}{R}$</p><p>$i = C\frac{dU_c}{dt}$</p><p>$i = \frac{1}{LC}\int i_Ldt$</p><h3 id="关于两种电压工作方式下的的异同之处">关于两种电压工作方式下的的异同之处</h3><p><strong>——基于移相全桥双向直流变换器：</strong></p><blockquote><p>why:</p><p>占空比不能超过百分之五十；</p></blockquote><h5 id="to-confrim："><strong>to confrim：</strong></h5><p>电流增大的过程</p><p>根据如上电流公式，电路对$L_s$充电</p>]]></content>
     
@@ -54,10 +90,10 @@
     
     
     
+    <category term="电力电子" scheme="http://example.com/categories/%E7%94%B5%E5%8A%9B%E7%94%B5%E5%AD%90/"/>
+    
     
     <category term="双向变换" scheme="http://example.com/tags/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2/"/>
-    
-    <category term="电力电子" scheme="http://example.com/tags/%E7%94%B5%E5%8A%9B%E7%94%B5%E5%AD%90/"/>
     
   </entry>
   
@@ -66,7 +102,7 @@
     <link href="http://example.com/2024/01/28/Git%E5%AD%A6%E4%B9%A0-20240128/"/>
     <id>http://example.com/2024/01/28/Git%E5%AD%A6%E4%B9%A0-20240128/</id>
     <published>2024-01-28T14:44:11.000Z</published>
-    <updated>2024-02-12T10:18:00.839Z</updated>
+    <updated>2024-02-13T02:30:39.377Z</updated>
     
     <content type="html"><![CDATA[<h2 id="多人协同开发下的文件冲突问题">多人协同开发下的<strong>文件冲突问题</strong></h2><p>由上一篇文章写到，多人协同开发时会有多个用户对资源库中的内容进行相关操作。而如果此时“张三”，“李四”，“王五”分别<strong>下载</strong>同一个文件进行修改，当他们<strong>上传</strong>修改后的文件时，新提交的文件便会替代后提交的文件，因此产生<strong>文件冲突问题</strong>。</p><h3 id="集中版本控制系统">集中版本控制系统</h3><h4 id="VSS">VSS</h4><p>方式：通过对资源库文件进行上锁解锁避免文件冲突问题。</p><blockquote><p>当张三下载文件1时，VSS会自动锁定资源库中的文件1，李四和王五无法下载文件1直到张三修改完成并上传文件1。</p></blockquote><p>但是很明显，这种方式在一个时间段只有一个人能对指定文件进行修改，不符合多人协同开发的高效目的，因此VSS最终被淘汰。</p><h4 id="CVS-SVN">CVS/SVN</h4><p>方式：对多个用户上传的版本进行比对，而不是直接替换。</p><blockquote><p>在这种情况下，三个人都可以下载和修改文件，但是上传之后，他们对不同部分的内容进行操作，然后再进行<strong>比对</strong>并把修改都应用到资源库中。</p></blockquote><p>但是集中版本控制系统有一个致命问题，就是当<strong>中央服务器</strong>失效时，用户就无法对数据进行操作，甚至因此损失数据。</p><h3 id="分部式版本控制系统">分部式版本控制系统</h3><p>在中央服务器的基础上搭建一个<strong>本地资源库</strong>，而用户访问的客户端也不再是中央服务器，而是本地资源库，当中央服务器恢复工作时，通过本地资源库和中央服务器的关联将修改应用到中央服务器。</p>]]></content>
     
@@ -91,7 +127,7 @@
     <link href="http://example.com/2024/01/27/Git%E5%AD%A6%E4%B9%A0-20240127/"/>
     <id>http://example.com/2024/01/27/Git%E5%AD%A6%E4%B9%A0-20240127/</id>
     <published>2024-01-27T12:03:05.000Z</published>
-    <updated>2024-02-12T10:18:02.082Z</updated>
+    <updated>2024-02-13T02:30:12.825Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>关键词：版本控制；集中式版本控制；分布式版本控制；多人协作开发</p></blockquote><ul><li><p>版本</p><p>软件版本文件版本</p><p>JDK    1.8,17,20</p></li><li><p>文件版本</p><ol><li>保存重要的历史记录</li><li>恢复数据</li></ol></li><li><p>版本控制软件</p><blockquote><p>基本功能：</p><ol><li>保存和管理文件</li><li>提供<strong>客户端工具</strong>进行访问（不直接对版本进行操作）</li><li>提供不同版本文件的<strong>比对功能</strong>（确认差异和执行修改）</li></ol></blockquote></li><li><p>围绕中央服务器进行的多人协作开发</p><p>对于项目数据的管理应该是将所有资源集中到一个<strong>资源库</strong>进行储存，而不是分布到各个服务器，该服务器称为<strong>中央服务器</strong>。</p><p>当用户需要对服务器内的数据进行操作时，就需要通过<strong>客户端</strong>工具从中央服务区把资源下载到本地，当多个用户进行相关操作时，这个工作状态称为<strong>多人协同开发</strong>。</p></li></ul>]]></content>
     

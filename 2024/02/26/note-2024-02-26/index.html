@@ -20,28 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="$i &#x3D;\frac{U}{R}$ $i &#x3D; C\frac{dU_c}{dt}$ $i &#x3D; \frac{1}{LC}\int i_Ldt$ 关于两种电压工作方式下的的异同之处 ——基于移相全桥双向直流变换器：  why: 占空比不能超过百分之五十；  to confrim： 电流增大的过程 根据如上电流公式，电路对$L_s$充电">
+    <meta name="description" content="Circuit Theory (1)Nodes, Branches and Loops   To differentiate between a circuit and a network, we may regard a network as an interconnection of elements or devices, whereas a circuit is a network pro">
 <meta property="og:type" content="article">
-<meta property="og:title" content="双向变换学习-20240131">
-<meta property="og:url" content="http://example.com/2024/01/31/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240131/index.html">
+<meta property="og:title" content="note-2024-02-26">
+<meta property="og:url" content="http://example.com/2024/02/26/note-2024-02-26/index.html">
 <meta property="og:site_name" content="Sutie">
-<meta property="og:description" content="$i &#x3D;\frac{U}{R}$ $i &#x3D; C\frac{dU_c}{dt}$ $i &#x3D; \frac{1}{LC}\int i_Ldt$ 关于两种电压工作方式下的的异同之处 ——基于移相全桥双向直流变换器：  why: 占空比不能超过百分之五十；  to confrim： 电流增大的过程 根据如上电流公式，电路对$L_s$充电">
+<meta property="og:description" content="Circuit Theory (1)Nodes, Branches and Loops   To differentiate between a circuit and a network, we may regard a network as an interconnection of elements or devices, whereas a circuit is a network pro">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-01-31T08:17:37.305Z">
-<meta property="article:modified_time" content="2024-02-13T02:30:04.123Z">
+<meta property="article:published_time" content="2024-02-26T12:20:41.000Z">
+<meta property="article:modified_time" content="2024-02-26T04:55:50.118Z">
 <meta property="article:author" content="Sutie Ye">
-<meta property="article:tag" content="双向变换">
+<meta property="article:tag" content="专业词汇">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2024/01/31/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240131/">
+<link rel="canonical" href="http://example.com/2024/02/26/note-2024-02-26/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/01/31/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240131/","path":"2024/01/31/双向变换学习-20240131/","title":"双向变换学习-20240131"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/02/26/note-2024-02-26/","path":"2024/02/26/note-2024-02-26/","title":"note-2024-02-26"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>双向变换学习-20240131 | Sutie</title>
+<title>note-2024-02-26 | Sutie</title>
   
 
 
@@ -119,7 +119,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E4%B8%A4%E7%A7%8D%E7%94%B5%E5%8E%8B%E5%B7%A5%E4%BD%9C%E6%96%B9%E5%BC%8F%E4%B8%8B%E7%9A%84%E7%9A%84%E5%BC%82%E5%90%8C%E4%B9%8B%E5%A4%84"><span class="nav-number">1.</span> <span class="nav-text">关于两种电压工作方式下的的异同之处</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#to-confrim%EF%BC%9A"><span class="nav-number">1.0.1.</span> <span class="nav-text">to confrim：</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Circuit-Theory"><span class="nav-number">1.</span> <span class="nav-text">Circuit Theory</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Nodes-Branches-and-Loops"><span class="nav-number">1.0.1.</span> <span class="nav-text">(1)Nodes, Branches and Loops</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -170,7 +170,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/31/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240131/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/02/26/note-2024-02-26/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -183,12 +183,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="双向变换学习-20240131 | Sutie">
+      <meta itemprop="name" content="note-2024-02-26 | Sutie">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          双向变换学习-20240131
+          note-2024-02-26
         </h1>
 
         <div class="post-meta-container">
@@ -198,15 +198,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2024-01-31 08:17:37" itemprop="dateCreated datePublished" datetime="2024-01-31T08:17:37Z">2024-01-31</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-02-13 02:30:04" itemprop="dateModified" datetime="2024-02-13T02:30:04Z">2024-02-13</time>
+      <time title="Created: 2024-02-26 12:20:41 / Modified: 04:55:50" itemprop="dateCreated datePublished" datetime="2024-02-26T12:20:41Z">2024-02-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -214,7 +208,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%94%B5%E5%8A%9B%E7%94%B5%E5%AD%90/" itemprop="url" rel="index"><span itemprop="name">电力电子</span></a>
+          <a href="/categories/%E5%AD%A6%E7%A7%91%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">学科知识</span></a>
         </span>
     </span>
 
@@ -227,18 +221,23 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>$i =\frac{U}{R}$</p>
-<p>$i = C\frac{dU_c}{dt}$</p>
-<p>$i = \frac{1}{LC}\int i_Ldt$</p>
-<h3 id="关于两种电压工作方式下的的异同之处">关于两种电压工作方式下的的异同之处</h3>
-<p><strong>——基于移相全桥双向直流变换器：</strong></p>
-<blockquote>
-<p>why:</p>
-<p>占空比不能超过百分之五十；</p>
-</blockquote>
-<h5 id="to-confrim："><strong>to confrim：</strong></h5>
-<p>电流增大的过程</p>
-<p>根据如上电流公式，电路对$L_s$充电</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="Circuit-Theory">Circuit Theory</h2>
+<h4 id="1-Nodes-Branches-and-Loops">(1)Nodes, Branches and Loops</h4>
+<ol>
+<li>
+<p>To differentiate between a circuit and a network, we may regard a <strong>network</strong> as <strong>an interconnection of elements or devices</strong>, whereas a <strong>circuit</strong> is <strong>a network providing one or more closed paths</strong>.</p>
+</li>
+<li>
+<p>A branch represents <strong>a single element</strong> such as a voltage source or a resistor. In other word, a <strong>branch</strong> represents <strong>any two-terminal element</strong>.</p>
+</li>
+<li>
+<p>A <strong>node</strong> is the point of <strong>connection</strong> between two or more branches. <strong>If a short circuit (a connecting wire) connects two nodes, the two nodes constitute a single node</strong>.(For the sake of clarity)</p>
+</li>
+<li>
+<p>A <strong>loop</strong> is any closed path in a circuit. A loop is a closed path formed by starting at a node, passing through a set of nodes, and returning to the starting node <strong>without passing through any node more than once</strong>.</p>
+<p>A loop is said to be <strong>independent</strong> if it contains a branch which is not in any other loop. Independent loops or path results in <strong>independent sets of equations</strong> .</p>
+</li>
+</ol>
 
     </div>
 
@@ -248,21 +247,18 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2/" rel="tag"># 双向变换</a>
+              <a href="/tags/%E4%B8%93%E4%B8%9A%E8%AF%8D%E6%B1%87/" rel="tag"># 专业词汇</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2024/01/28/Git%E5%AD%A6%E4%B9%A0-20240128/" rel="prev" title="Git学习-20240128">
-                  <i class="fa fa-angle-left"></i> Git学习-20240128
+                <a href="/2024/02/13/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240213/" rel="prev" title="双向变换学习-20240213">
+                  <i class="fa fa-angle-left"></i> 双向变换学习-20240213
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2024/02/13/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240213/" rel="next" title="双向变换学习-20240213">
-                  双向变换学习-20240213 <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>

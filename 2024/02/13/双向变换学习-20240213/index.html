@@ -20,28 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="$i &#x3D;\frac{U}{R}$ $i &#x3D; C\frac{dU_c}{dt}$ $i &#x3D; \frac{1}{LC}\int i_Ldt$ 关于两种电压工作方式下的的异同之处 ——基于移相全桥双向直流变换器：  why: 占空比不能超过百分之五十；  to confrim： 电流增大的过程 根据如上电流公式，电路对$L_s$充电">
+    <meta name="description" content="2024-0213 [A Control Design Technology of Isolated Bidirectional LLC Resonant Converter for Energy Storage System in DC Microgrid Applications]  Key word: 隔离型双向LLC谐振变换器 直流微电网储能 控制  摘要">
 <meta property="og:type" content="article">
-<meta property="og:title" content="双向变换学习-20240131">
-<meta property="og:url" content="http://example.com/2024/01/31/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240131/index.html">
+<meta property="og:title" content="双向变换学习-20240213">
+<meta property="og:url" content="http://example.com/2024/02/13/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240213/index.html">
 <meta property="og:site_name" content="Sutie">
-<meta property="og:description" content="$i &#x3D;\frac{U}{R}$ $i &#x3D; C\frac{dU_c}{dt}$ $i &#x3D; \frac{1}{LC}\int i_Ldt$ 关于两种电压工作方式下的的异同之处 ——基于移相全桥双向直流变换器：  why: 占空比不能超过百分之五十；  to confrim： 电流增大的过程 根据如上电流公式，电路对$L_s$充电">
+<meta property="og:description" content="2024-0213 [A Control Design Technology of Isolated Bidirectional LLC Resonant Converter for Energy Storage System in DC Microgrid Applications]  Key word: 隔离型双向LLC谐振变换器 直流微电网储能 控制  摘要">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-01-31T08:17:37.305Z">
-<meta property="article:modified_time" content="2024-02-13T02:30:04.123Z">
+<meta property="article:published_time" content="2024-02-13T10:00:20.000Z">
+<meta property="article:modified_time" content="2024-02-13T08:08:02.207Z">
 <meta property="article:author" content="Sutie Ye">
 <meta property="article:tag" content="双向变换">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2024/01/31/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240131/">
+<link rel="canonical" href="http://example.com/2024/02/13/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240213/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/01/31/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240131/","path":"2024/01/31/双向变换学习-20240131/","title":"双向变换学习-20240131"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/02/13/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240213/","path":"2024/02/13/双向变换学习-20240213/","title":"双向变换学习-20240213"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>双向变换学习-20240131 | Sutie</title>
+<title>双向变换学习-20240213 | Sutie</title>
   
 
 
@@ -119,7 +119,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E4%B8%A4%E7%A7%8D%E7%94%B5%E5%8E%8B%E5%B7%A5%E4%BD%9C%E6%96%B9%E5%BC%8F%E4%B8%8B%E7%9A%84%E7%9A%84%E5%BC%82%E5%90%8C%E4%B9%8B%E5%A4%84"><span class="nav-number">1.</span> <span class="nav-text">关于两种电压工作方式下的的异同之处</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#to-confrim%EF%BC%9A"><span class="nav-number">1.0.1.</span> <span class="nav-text">to confrim：</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#2024-0213"><span class="nav-number">1.</span> <span class="nav-text">2024-0213</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#A-Control-Design-Technology-of-Isolated-Bidirectional-LLC-Resonant-Converter-for-Energy-Storage-System-in-DC-Microgrid-Applications"><span class="nav-number">1.0.1.</span> <span class="nav-text">[A Control Design Technology of Isolated Bidirectional LLC Resonant Converter for Energy Storage System in DC Microgrid Applications]</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%91%98%E8%A6%81"><span class="nav-number">1.1.</span> <span class="nav-text">摘要</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -170,7 +170,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/31/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240131/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/02/13/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240213/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -183,12 +183,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="双向变换学习-20240131 | Sutie">
+      <meta itemprop="name" content="双向变换学习-20240213 | Sutie">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          双向变换学习-20240131
+          双向变换学习-20240213
         </h1>
 
         <div class="post-meta-container">
@@ -198,15 +198,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2024-01-31 08:17:37" itemprop="dateCreated datePublished" datetime="2024-01-31T08:17:37Z">2024-01-31</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-02-13 02:30:04" itemprop="dateModified" datetime="2024-02-13T02:30:04Z">2024-02-13</time>
+      <time title="Created: 2024-02-13 10:00:20 / Modified: 08:08:02" itemprop="dateCreated datePublished" datetime="2024-02-13T10:00:20Z">2024-02-13</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -214,7 +208,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%94%B5%E5%8A%9B%E7%94%B5%E5%AD%90/" itemprop="url" rel="index"><span itemprop="name">电力电子</span></a>
+          <a href="/categories/%E7%94%B5%E6%BA%90/" itemprop="url" rel="index"><span itemprop="name">电源</span></a>
         </span>
     </span>
 
@@ -227,18 +221,13 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>$i =\frac{U}{R}$</p>
-<p>$i = C\frac{dU_c}{dt}$</p>
-<p>$i = \frac{1}{LC}\int i_Ldt$</p>
-<h3 id="关于两种电压工作方式下的的异同之处">关于两种电压工作方式下的的异同之处</h3>
-<p><strong>——基于移相全桥双向直流变换器：</strong></p>
+    <div class="post-body" itemprop="articleBody"><h3 id="2024-0213">2024-0213</h3>
+<h5 id="A-Control-Design-Technology-of-Isolated-Bidirectional-LLC-Resonant-Converter-for-Energy-Storage-System-in-DC-Microgrid-Applications">[A Control Design Technology of Isolated Bidirectional LLC Resonant Converter for Energy Storage System in DC Microgrid Applications]</h5>
 <blockquote>
-<p>why:</p>
-<p>占空比不能超过百分之五十；</p>
+<p>Key word:</p>
+<p>隔离型双向LLC谐振变换器 直流微电网储能 控制</p>
 </blockquote>
-<h5 id="to-confrim："><strong>to confrim：</strong></h5>
-<p>电流增大的过程</p>
-<p>根据如上电流公式，电路对$L_s$充电</p>
+<h4 id="摘要">摘要</h4>
 
     </div>
 
@@ -255,13 +244,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2024/01/28/Git%E5%AD%A6%E4%B9%A0-20240128/" rel="prev" title="Git学习-20240128">
-                  <i class="fa fa-angle-left"></i> Git学习-20240128
+                <a href="/2024/01/31/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240131/" rel="prev" title="双向变换学习-20240131">
+                  <i class="fa fa-angle-left"></i> 双向变换学习-20240131
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2024/02/13/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240213/" rel="next" title="双向变换学习-20240213">
-                  双向变换学习-20240213 <i class="fa fa-angle-right"></i>
+                <a href="/2024/02/26/note-2024-02-26/" rel="next" title="note-2024-02-26">
+                  note-2024-02-26 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
