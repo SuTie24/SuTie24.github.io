@@ -20,28 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="多人协同开发下的文件冲突问题 由上一篇文章写到，多人协同开发时会有多个用户对资源库中的内容进行相关操作。而如果此时“张三”，“李四”，“王五”分别下载同一个文件进行修改，当他们上传修改后的文件时，新提交的文件便会替代后提交的文件，因此产生文件冲突问题。 集中版本控制系统 VSS 方式：通过对资源库文件进行上锁解锁避免文件冲突问题。  当张三下载文件1时，VSS会自动锁定资源库中的文件1，李四和王五">
+    <meta name="description" content="Introduction to Circuit Theory-2 ^接上文 Circuit topology  Two or more element are in series if they are cascaded or connected sequentially and consequently carry the same current.   Two or more element">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git学习-20240128">
-<meta property="og:url" content="http://example.com/2024/01/28/Git%E5%AD%A6%E4%B9%A0-20240128/index.html">
+<meta property="og:title" content="note-2024-02-28">
+<meta property="og:url" content="http://example.com/2024/02/28/note-2024-02-28/index.html">
 <meta property="og:site_name" content="Sutie">
-<meta property="og:description" content="多人协同开发下的文件冲突问题 由上一篇文章写到，多人协同开发时会有多个用户对资源库中的内容进行相关操作。而如果此时“张三”，“李四”，“王五”分别下载同一个文件进行修改，当他们上传修改后的文件时，新提交的文件便会替代后提交的文件，因此产生文件冲突问题。 集中版本控制系统 VSS 方式：通过对资源库文件进行上锁解锁避免文件冲突问题。  当张三下载文件1时，VSS会自动锁定资源库中的文件1，李四和王五">
+<meta property="og:description" content="Introduction to Circuit Theory-2 ^接上文 Circuit topology  Two or more element are in series if they are cascaded or connected sequentially and consequently carry the same current.   Two or more element">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-01-28T14:44:11.000Z">
-<meta property="article:modified_time" content="2024-02-26T04:56:04.877Z">
+<meta property="article:published_time" content="2024-02-28T15:09:18.000Z">
+<meta property="article:modified_time" content="2024-02-28T07:45:38.120Z">
 <meta property="article:author" content="Sutie Ye">
-<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2024/01/28/Git%E5%AD%A6%E4%B9%A0-20240128/">
+<link rel="canonical" href="http://example.com/2024/02/28/note-2024-02-28/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/01/28/Git%E5%AD%A6%E4%B9%A0-20240128/","path":"2024/01/28/Git学习-20240128/","title":"Git学习-20240128"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/02/28/note-2024-02-28/","path":"2024/02/28/note-2024-02-28/","title":"note-2024-02-28"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Git学习-20240128 | Sutie</title>
+<title>note-2024-02-28 | Sutie</title>
   
 
 
@@ -119,7 +118,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E4%BA%BA%E5%8D%8F%E5%90%8C%E5%BC%80%E5%8F%91%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E5%86%B2%E7%AA%81%E9%97%AE%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">多人协同开发下的文件冲突问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%86%E4%B8%AD%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.1.</span> <span class="nav-text">集中版本控制系统</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#VSS"><span class="nav-number">1.1.1.</span> <span class="nav-text">VSS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CVS-SVN"><span class="nav-number">1.1.2.</span> <span class="nav-text">CVS&#x2F;SVN</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E9%83%A8%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.2.</span> <span class="nav-text">分部式版本控制系统</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction-to-Circuit-Theory-2"><span class="nav-number">1.</span> <span class="nav-text">Introduction to Circuit Theory-2</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Circuit-topology"><span class="nav-number">1.0.1.</span> <span class="nav-text">Circuit topology</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Further-knowledge"><span class="nav-number">1.0.2.</span> <span class="nav-text">Further knowledge:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#book-P1"><span class="nav-number">1.0.3.</span> <span class="nav-text">book-P1</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Ohm%E2%80%99s-Law-KCL-Kirchhoff%E2%80%99s-Current-Law-and-KVL-Kirchhoff%E2%80%99s-Voltage-Law"><span class="nav-number">1.1.</span> <span class="nav-text">(2)Ohm’s Law, KCL(Kirchhoff’s Current Law) and KVL(Kirchhoff’s Voltage Law)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#KCL"><span class="nav-number">1.1.1.</span> <span class="nav-text">KCL:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Mathematical"><span class="nav-number">1.1.2.</span> <span class="nav-text">Mathematical:</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -170,7 +169,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/28/Git%E5%AD%A6%E4%B9%A0-20240128/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/02/28/note-2024-02-28/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -183,12 +182,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Git学习-20240128 | Sutie">
+      <meta itemprop="name" content="note-2024-02-28 | Sutie">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Git学习-20240128
+          note-2024-02-28
         </h1>
 
         <div class="post-meta-container">
@@ -198,15 +197,18 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2024-01-28 14:44:11" itemprop="dateCreated datePublished" datetime="2024-01-28T14:44:11Z">2024-01-28</time>
+      <time title="Created: 2024-02-28 15:09:18 / Modified: 07:45:38" itemprop="dateCreated datePublished" datetime="2024-02-28T15:09:18Z">2024-02-28</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
+        <i class="far fa-folder"></i>
       </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-02-26 04:56:04" itemprop="dateModified" datetime="2024-02-26T04:56:04Z">2024-02-26</time>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E4%B8%93%E4%B8%9A%E8%AF%8D%E6%B1%87/" itemprop="url" rel="index"><span itemprop="name">专业词汇</span></a>
+        </span>
     </span>
 
   
@@ -218,23 +220,64 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h2 id="多人协同开发下的文件冲突问题">多人协同开发下的<strong>文件冲突问题</strong></h2>
-<p>由上一篇文章写到，多人协同开发时会有多个用户对资源库中的内容进行相关操作。而如果此时“张三”，“李四”，“王五”分别<strong>下载</strong>同一个文件进行修改，当他们<strong>上传</strong>修改后的文件时，新提交的文件便会替代后提交的文件，因此产生<strong>文件冲突问题</strong>。</p>
-<h3 id="集中版本控制系统">集中版本控制系统</h3>
-<h4 id="VSS">VSS</h4>
-<p>方式：通过对资源库文件进行上锁解锁避免文件冲突问题。</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="Introduction-to-Circuit-Theory-2">Introduction to Circuit Theory-2</h2>
+<p>^接上文</p>
+<h4 id="Circuit-topology">Circuit topology</h4>
 <blockquote>
-<p>当张三下载文件1时，VSS会自动锁定资源库中的文件1，李四和王五无法下载文件1直到张三修改完成并上传文件1。</p>
+<p>Two or more element are in series if they are cascaded or connected sequentially and consequently <strong>carry</strong> the same current.</p>
 </blockquote>
-<p>但是很明显，这种方式在一个时间段只有一个人能对指定文件进行修改，不符合多人协同开发的高效目的，因此VSS最终被淘汰。</p>
-<h4 id="CVS-SVN">CVS/SVN</h4>
-<p>方式：对多个用户上传的版本进行比对，而不是直接替换。</p>
 <blockquote>
-<p>在这种情况下，三个人都可以下载和修改文件，但是上传之后，他们对不同部分的内容进行操作，然后再进行<strong>比对</strong>并把修改都应用到资源库中。</p>
+<p>Two or more element are in parallel if they are connected to the same two nodes and consequently have the same voltage <strong>across</strong> them.</p>
 </blockquote>
-<p>但是集中版本控制系统有一个致命问题，就是当<strong>中央服务器</strong>失效时，用户就无法对数据进行操作，甚至因此损失数据。</p>
-<h3 id="分部式版本控制系统">分部式版本控制系统</h3>
-<p>在中央服务器的基础上搭建一个<strong>本地资源库</strong>，而用户访问的客户端也不再是中央服务器，而是本地资源库，当中央服务器恢复工作时，通过本地资源库和中央服务器的关联将修改应用到中央服务器。</p>
+<h4 id="Further-knowledge">Further knowledge:</h4>
+<ul>
+<li>
+<p>模糊控制 (Fuzzy Logic Control/Fuzzy Control)</p>
+<p>if a = NB, ec = NB, v = PB; (待补充)</p>
+</li>
+<li>
+<p>BangBang算法： 一种基本的最优控制算法，也称为滞后控制算法或二值控制算法；</p>
+<ul>
+<li>
+<p>BangBang算法将系统的输出与设定值进行比较，以此确定控制信号的方向。当输出值低于目标值时，则将控制信号设置为一个预设的最大值，反之设置为预设最小值，<strong>算法实现简单</strong>。</p>
+</li>
+<li>
+<p>拓展链接：根据Chat AI生成的BangBang算法优化策略：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/u012579721/article/details/132490776">https://blog.csdn.net/u012579721/article/details/132490776</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>复合控制 (Composite control)</p>
+</li>
+<li>
+<p>机电混合（Electromechanical mixing)</p>
+</li>
+</ul>
+<h4 id="book-P1">book-P1</h4>
+<blockquote>
+<p>The same is true of ……	同样适用于</p>
+<p>demonstrate that</p>
+<p>for the sake of doing ……</p>
+<p>spread out</p>
+<p>prefect conductors</p>
+<p>passing through</p>
+<p>set of equations</p>
+</blockquote>
+<h3 id="2-Ohm’s-Law-KCL-Kirchhoff’s-Current-Law-and-KVL-Kirchhoff’s-Voltage-Law">(2)Ohm’s Law, KCL(Kirchhoff’s Current Law) and KVL(Kirchhoff’s Voltage Law)</h3>
+<p>Kirchhoff’s First Law is based on <strong>the Law of conservation of charge</strong>, which requires that the <strong>algebraic sum of charge</strong> within a system <strong>cannot change</strong>.</p>
+<h4 id="KCL"><strong>KCL</strong>:</h4>
+<p>the algebraic sum of currents <strong>entering a node</strong> (or a close boundary) is <strong>zero</strong>.</p>
+<h4 id="Mathematical">Mathematical:</h4>
+<p>$$<br>
+KCL: \sum^N_{n=1}i_n=0<br>
+$$</p>
+<p>N  —— the number of branches connected to the node.</p>
+<p>in —— the n(th) current entering the node.</p>
+<blockquote>
+<p><em>currents <strong>entering</strong> the node may be regard as <strong>positive</strong>, which <strong>leaving</strong> the node may be regard as <strong>negative</strong> or vice <strong>versa</strong>.</em></p>
+<p>​	i1-i2</p>
+</blockquote>
 
     </div>
 
@@ -243,22 +286,16 @@
     
 
     <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/Git/" rel="tag"># Git</a>
-          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2024/01/27/Git%E5%AD%A6%E4%B9%A0-20240127/" rel="prev" title="Git学习-20240127">
-                  <i class="fa fa-angle-left"></i> Git学习-20240127
+                <a href="/2024/02/26/note-2024-02-26/" rel="prev" title="note-2024-02-26">
+                  <i class="fa fa-angle-left"></i> note-2024-02-26
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2024/01/31/%E5%8F%8C%E5%90%91%E5%8F%98%E6%8D%A2%E5%AD%A6%E4%B9%A0-20240131/" rel="next" title="双向变换学习-20240131">
-                  双向变换学习-20240131 <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>
